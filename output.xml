@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.2 on linux)" generated="20200420 22:09:33.575" rpa="false">
+<suite id="s1" name="Login" source="/home/dyg/qaninja/ninjapixel/tests/login.robot">
+<test id="s1-t1" name="Login com sucesso">
+<kw name="Dado que eu acesso a página de Login">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Esta é a automação do step dado</arg>
+</arguments>
+<status status="PASS" starttime="20200420 22:09:33.715" endtime="20200420 22:09:33.716"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200420 22:09:33.716" level="INFO">Opening browser 'chrome' to base url 'https://qatoriba.dealernetworkflow.com.br'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200420 22:09:36.285" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20200420 22:09:36.284" endtime="20200420 22:09:36.285"></status>
+</kw>
+<msg timestamp="20200420 22:09:36.301" level="FAIL">WebDriverException: Message: unknown error: Chrome failed to start: crashed.
+  (chrome not reachable)
+  (The process started from chrome location /opt/google/chrome/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+</msg>
+<status status="FAIL" starttime="20200420 22:09:33.716" endtime="20200420 22:09:36.301"></status>
+</kw>
+<status status="FAIL" starttime="20200420 22:09:33.715" endtime="20200420 22:09:36.302"></status>
+</kw>
+<status status="FAIL" starttime="20200420 22:09:33.715" endtime="20200420 22:09:36.303" critical="yes">WebDriverException: Message: unknown error: Chrome failed to start: crashed.
+  (chrome not reachable)
+  (The process started from chrome location /opt/google/chrome/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+</status>
+</test>
+<status status="FAIL" starttime="20200420 22:09:33.575" endtime="20200420 22:09:36.309"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

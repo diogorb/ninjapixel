@@ -1,0 +1,19 @@
+Senha Incorreta
+    Dado que eu acesso a página de Login
+    Quando eu submeto minhas credenciais com senha incorreta
+    Então devo ver uma mensagem de alerta "Usuário e/ou senha inválidos"
+
+Email que não existe
+    Dado que eu acesso a página de Login
+    Quando eu submeto minhas credenciais com email não cadastrado
+    Então devo ver uma mensagem de alerta "Usuário e/ou senha inválidos"
+
+Email não informado
+    Dado que eu acesso a página de Login
+    Quando eu submeto minhas credenciais sem informar o e-mail
+    Então devo ver uma mensagem de alerta "Opps. Informe o seu e-mail!"
+
+Senha não informada
+    Dado que eu acesso a página de Login
+    Quando eu submeto minhas credenciais sem informar a senha
+    Então devo ver uma mensagem de alerta "Opps. Informe a sua senha!"
