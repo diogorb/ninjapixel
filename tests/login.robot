@@ -32,14 +32,8 @@ Quando eu submeto minhas credenciais
     Input Text      identifier:passId       ${pass}
     Click element   class:btn
 
-Quando eu submeto minhas credenciais com senha incorreta
-    Quando eu submeto minhas credenciais 
-    Input Text      identifier:email        ${email}
-    Input Text      identifier:passId       senhaErrada
-    Click element   class:btn
-
 Então devo ver uma mensagem de alerta "${mensagem}"
-    Element should contain      xpath=//div[contains(@class, 'card-body')]/div[3]/span/b     ${mensagem}
+    Page should contain     ${mensagem}
 
 Então devo ser autenticado
     Wait until page contains    dig
