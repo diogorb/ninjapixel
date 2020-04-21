@@ -16,6 +16,7 @@ Login com sucesso
     Então devo ser autenticado
 
 Senha Incorreta
+    [tags]  temp
     Dado que eu acesso a página de Login
     Quando eu submeto minhas credenciais 
     ...     dig@ninjapixel.com  senhaErrada
@@ -33,7 +34,7 @@ Quando eu submeto minhas credenciais
     Click element   class:btn
 
 Então devo ver uma mensagem de alerta "${mensagem}"
-    Page should contain     ${mensagem}
+    Page should contain     ${mensagem}     loglevel=DEBUG
 
 Então devo ser autenticado
     Wait until page contains    dig
