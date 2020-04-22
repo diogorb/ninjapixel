@@ -1,9 +1,25 @@
 ***Settings
-Documentation   Login
-Library     SeleniumLibrary
+Documentation       Login
+Library             SeleniumLibrary
+Suite Setup         Inicia Sessao
+Suite Teardown      Encerra Sessao
+Test Teardown       Depois do Teste
 
 ***Variables
 ${url}      http://localhost:3000
+
+*** Keywords ***
+### Ganchos
+Inicia Sessao
+    #Open Browser                    ${url}  chrome
+    #Set Window Size                 1200                  800
+    Set Selenium Implicit Wait      2
+
+Encerra Sessao
+    Close Browser
+
+Depois do Teste
+    Capture Page Screenshot
 
 #Qualidade começa na especificação
 #Gherkin > Descrever comportamentos com Dado, Quando e Então
